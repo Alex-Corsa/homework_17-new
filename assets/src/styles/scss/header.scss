@@ -1,0 +1,33 @@
+@import "../components/basic/variables";
+@import "../components/basic/mixin";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: $color-fon;
+    border-bottom: 1px solid $color-line;
+    &__nav--menu {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 62px;
+        position: relative;
+    }
+        &__li--item {
+            display: inline-block;
+        }
+            &__wrapp--link {
+                padding: 20px 10px;
+                position: relative;
+            }
+            &__wrapp--link:hover {
+                border-bottom: 2px solid $color-white;
+            }
+                &__a--link {
+                    @include text (16px,normal,500,1.25,left,$color-white);
+                }
+}

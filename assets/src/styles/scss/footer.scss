@@ -1,0 +1,15 @@
+@import "../components/basic/variables";
+@import "../components/basic/mixin";
+
+.footer {
+    background-color: $color-ashen;
+    padding: 33px 0;
+    &__line--border {
+        margin-bottom: 15px;
+        height: 1px;
+        background-color: $color-grey;
+    }
+    &__p--text {
+        @include text (13px,normal,400,1.3,center,$color-grey);
+    }
+}

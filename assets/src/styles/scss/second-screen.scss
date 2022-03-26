@@ -1,0 +1,75 @@
+@import "../components/basic/variables";
+@import "../components/basic/mixin";
+
+.second-screen {
+    &__wrapper {
+        margin-top: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        margin-top: 110px;
+        &__wrap--flex {
+            max-width: 739px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+            &__h2--subtitle {
+                @include text (36px,normal,700,1.3,center,$color-dark);
+            }
+            &__p--text {
+                @include text (16px,normal,400,1.3,center,$color-grey);
+            }
+        &__wrap--grid {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            flex-wrap: wrap;
+            justify-content: center;
+            grid-column-gap: 30px;
+            width: 100%;
+        }
+            &__inner--flex {    
+                margin-bottom: 55px;
+                min-height: 139px;
+                display: flex;
+            }
+                &__images--big_disk {
+                    width: 110px;
+                    height: 110px;
+                    margin-right: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $color-light_grey;
+                    border-radius: 50%;
+                }
+                    &__images--litl_disk {
+                        margin: 10px;
+                        width: 90px;
+                        height: 90px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $color-accent;
+                        border-radius: 50%;
+                    }
+                &__box--text {
+                    align-self: flex-end;
+                }
+                    &__h3--info {
+                        @include text (18px,normal,600,1.3,left,$color-dark);
+                        margin-bottom: 12px;
+                    }
+                        &__p--text-2 {
+                            @include text (14px,normal,400,1.3,left,$color-dark);
+                        }
+                &__button--button-first {
+                    margin-bottom: 105px;
+                }
+}

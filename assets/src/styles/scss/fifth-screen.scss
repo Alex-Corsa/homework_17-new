@@ -1,0 +1,34 @@
+@import "../components/basic/variables";
+@import "../components/basic/mixin";
+
+.fifth-screen {
+    background-color: $color-ashen;
+    &__content--flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        &__wrapper--text {
+            margin-top: 100px;
+            max-width: 790px;
+            text-align: center;
+        }
+            &__h2--sabtatle {
+                @include text (36px,normal,700,1.3,center,$color-black);
+                margin-bottom: 50px;
+            }
+            &__p--text {
+                @include text (16px,normal,400,1.3,center,$color-grey);
+                margin-bottom: 70px;
+            }
+        &__wrapper--grid {
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        &__button--button-fifth {
+            margin-bottom: 130px;
+        }
+}

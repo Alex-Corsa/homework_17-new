@@ -1,0 +1,27 @@
+@import "../components/basic/variables";
+@import "../components/basic/mixin";
+
+.first-screen {
+    background-image: url(../images//bg_f-s.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    &__wrapper--flex {
+        max-width: 829px;
+        min-height: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        &__h1--title {
+            @include text (16px,normal,500,1.25,center,$color-white);
+            vertical-align: top;
+            margin-bottom: 20px;
+        }
+        &__span--slogan {
+            @include text (48px,normal,800,1.3,center,$color-white);
+            margin-bottom: 50px;
+        }
+}

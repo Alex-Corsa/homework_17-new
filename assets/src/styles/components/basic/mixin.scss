@@ -1,0 +1,15 @@
+@mixin text ($f-s,$f-st,$f-w,$l-h,$t-al,$col) {
+    font-size: $f-s;
+    font-style: $f-st;
+    font-weight: $f-w;
+    line-height: $l-h;
+    text-align: $t-al;
+    color: $col;
+}
+
+@mixin button ($w,$h,$bg-c,$b-r){
+    width: $w;
+    height: $h;
+    background-color: $bg-c;
+    border-radius: $b-r;
+}
